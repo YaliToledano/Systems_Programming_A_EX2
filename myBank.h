@@ -1,5 +1,8 @@
-#ifndef _MYLIB_H_
-#define _MYLIB_H_
+#ifndef MYLIB_H
+#define MYLIB_H
+#define acountnumbers 50
+#define accountid 901
+extern double data[acountnumbers][2];
 
 int findOpenAccount();
 
@@ -14,5 +17,9 @@ void withdrawal(int account_number, double amount);
 void close(int account_number);
 
 void interest(double interest);
+
+void print();
+
+void closeAll();
 
 #endif
